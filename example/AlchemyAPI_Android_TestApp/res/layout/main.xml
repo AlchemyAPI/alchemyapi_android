@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter URL:"/>
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label"/>
+        
+   <Button
+     android:id="@+id/concept_button"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="@string/button_concepts"
+     android:layout_below="@id/entry"/>
+     
+   <Button
+     android:id="@+id/entity_button"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="@string/button_entities"
+     android:layout_below="@id/entry"
+     android:layout_toRightOf="@id/concept_button" />
+     
+   <Button
+   	 android:id="@+id/keyword_button"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="@string/button_keywords"
+     android:layout_below="@id/entry"
+     android:layout_toRightOf="@id/entity_button" />
+     
+   <Button
+   	 android:id="@+id/text_button"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="@string/button_text"
+     android:layout_below="@id/concept_button" />
+     
+  <Button
+   	 android:id="@+id/sentiment_button"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="@string/button_sentiment"
+     android:layout_below="@id/concept_button"
+     android:layout_toRightOf="@id/text_button" />
+  
+  <Button
+   	 android:id="@+id/taxonomy_button"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="@string/button_taxonomy"
+     android:layout_below="@id/concept_button"
+     android:layout_toRightOf="@id/sentiment_button" />
+
+  <Button
+      android:id="@+id/image_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/text_button"
+      android:text="@string/button_image" />
+
+  <Button
+      android:id="@+id/combined_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/image_button"
+      android:layout_alignBottom="@+id/image_button"
+      android:layout_toLeftOf="@+id/keyword_button"
+      android:text="@string/button_combined" />
+
+  <TextView
+      android:id="@+id/TextView01"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/image_button"
+      android:layout_marginTop="19dp"
+      android:scrollbars="vertical"
+      android:text="@+id/TextView01" />
+
+</RelativeLayout>

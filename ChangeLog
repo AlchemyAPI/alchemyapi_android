@@ -1,0 +1,7 @@
+CHANGELOG
+
+0.9 - Added support for taxonomy, image extraction, and combined call
+0.8 - Added support for author extraction and targeted sentiment
+0.7 - Added support for relations extraction
+0.6 - Added support for sentiment analysis
+0.5.1 - Initial Release
