@@ -6,15 +6,6 @@ This is a Java implementation of the AlchemyAPI SDK meant to run on
 the Android mobile OS.
 
 
-INSTALLATION
-
-This module depends on the AlchemyAPI_Java-0.9 SDK
-
-First build the Java SDK inside of depend/AlchemyAPI_Java-0.9 with the
-instructions listed. Then add the AlchemyAPI.jar to your build path when 
-using eclipse.
-
-
 RUNNING EXAMPLES
 
 A sample project is included showing an example of an AlchemyAPI enabled
