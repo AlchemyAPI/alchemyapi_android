@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, AlchemyAPI_Android_TestApp!</string>
-    <string name="app_name">AlchemyAPI_Android_TestApp</string>
+    <string name="app_name">AlchemyAPI SDK</string>
     <string name="menu_concepts">Analyze for Concepts</string>
     <string name="menu_entities">Analyze for Entities</string>
     <string name="menu_keywords">Analyze for Keywords</string>
@@ -11,6 +11,8 @@
     <string name="button_text">Text</string>
     <string name="button_sentiment">Sentiment</string>
     <string name="button_taxonomy">Taxonomy</string>
-    <string name="button_image">Image</string>
+    <string name="button_image">Image Extraction</string>
     <string name="button_combined">Combined</string>
+    <string name="button_image_classify">Classify Image</string>
+    <string name="kitten">Kitten</string>
 </resources>

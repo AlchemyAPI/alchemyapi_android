@@ -8,7 +8,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Enter URL:"/>
-    <EditText
+     
+    <TextView
         android:id="@+id/entry"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -31,35 +32,11 @@
      android:layout_toRightOf="@id/concept_button" />
      
    <Button
-   	 android:id="@+id/keyword_button"
-     android:layout_height="wrap_content"
-     android:layout_width="wrap_content"
-     android:text="@string/button_keywords"
-     android:layout_below="@id/entry"
-     android:layout_toRightOf="@id/entity_button" />
-     
-   <Button
    	 android:id="@+id/text_button"
      android:layout_height="wrap_content"
      android:layout_width="wrap_content"
      android:text="@string/button_text"
      android:layout_below="@id/concept_button" />
-     
-  <Button
-   	 android:id="@+id/sentiment_button"
-     android:layout_height="wrap_content"
-     android:layout_width="wrap_content"
-     android:text="@string/button_sentiment"
-     android:layout_below="@id/concept_button"
-     android:layout_toRightOf="@id/text_button" />
-  
-  <Button
-   	 android:id="@+id/taxonomy_button"
-     android:layout_height="wrap_content"
-     android:layout_width="wrap_content"
-     android:text="@string/button_taxonomy"
-     android:layout_below="@id/concept_button"
-     android:layout_toRightOf="@id/sentiment_button" />
 
   <Button
       android:id="@+id/image_button"
@@ -73,19 +50,61 @@
       android:id="@+id/combined_button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_alignBaseline="@+id/image_button"
-      android:layout_alignBottom="@+id/image_button"
-      android:layout_toLeftOf="@+id/keyword_button"
+      android:layout_above="@+id/TextView01"
+      android:layout_alignRight="@+id/keyword_button"
       android:text="@string/button_combined" />
+
+  <Button
+      android:id="@+id/keyword_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/taxonomy_button"
+      android:layout_toRightOf="@+id/entity_button"
+      android:text="@string/button_keywords" />
+
+  <Button
+      android:id="@+id/sentiment_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/image_button"
+      android:layout_toLeftOf="@+id/keyword_button"
+      android:text="@string/button_sentiment" />
+
+  <Button
+      android:id="@+id/taxonomy_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/combined_button"
+      android:layout_alignLeft="@+id/keyword_button"
+      android:text="@string/button_taxonomy" />
 
   <TextView
       android:id="@+id/TextView01"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
       android:layout_alignParentLeft="true"
+      android:layout_alignRight="@+id/button_image_classify"
       android:layout_below="@+id/image_button"
-      android:layout_marginTop="19dp"
+      android:layout_marginTop="105dp"
       android:scrollbars="vertical"
       android:text="@+id/TextView01" />
+
+  <Button
+      android:id="@+id/button_image_classify"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:text="@string/button_image_classify" />
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignTop="@+id/button_image_classify"
+      android:layout_toRightOf="@+id/button_image_classify"
+      android:contentDescription="@string/kitten"
+      android:src="@drawable/kitten" />
 
 </RelativeLayout>
