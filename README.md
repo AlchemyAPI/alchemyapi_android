@@ -3,7 +3,7 @@ AlchemyAPI Android SDK: version 0.9
 ===================================
 
 This is a Java implementation of the AlchemyAPI SDK meant to run on
-the Android mobile OS.
+the Android mobile OS. - **_Please note that this legacy AlchemyAPI SDK is no longer supported by IBM. Please use the Watson SDKs https://github.com/watson-developer-cloud?utf8=✓&query=sdk__**
 
 
 RUNNING EXAMPLES
